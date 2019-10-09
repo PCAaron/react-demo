@@ -1,3 +1,6 @@
+# react-demo        
+react-demo：基于create-react-app构建的react demo
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

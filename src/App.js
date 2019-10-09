@@ -1,11 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import './App.css';
+import Main from './pages/Main'
+import NewsList from './pages/NewsList'
+import NotFound from './pages/NotFound'
+import Wrap from './pages/Wrapper'
 
-function App() {
+const App = (props) => {
   return (
-    <div className="App">
-      TEST
-    </div>
+      <Router {...props}>
+        <Route component={Wrap}>
+            <Switch>
+                <Route path='/' exact component={Main}/>
+                <Route path='/news/:type' component={NewsList}/>
+                <Route path='*'  component={NotFound}/>
+            </Switch>
+        </Route>
+      </Router>
   );
 }
 
