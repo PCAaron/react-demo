@@ -1,7 +1,6 @@
-const initalState={
-    newsList:[]
-}
+import { combineReducers } from "redux";
+import NewsReducer from '../pages/NewsList/reducer'
 
-export default (state=initalState,action)=>{
-    return state
-}
+export default combineReducers({
+    NewsReducer
+})

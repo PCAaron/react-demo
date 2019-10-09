@@ -12,7 +12,7 @@ const App = (props) => {
         <Route component={Wrap}>
             <Switch>
                 <Route path='/' exact component={Main}/>
-                <Route path='/news/:type' component={NewsList}/>
+                <Route path='/:type' component={NewsList}/>
                 <Route path='*'  component={NotFound}/>
             </Switch>
         </Route>

@@ -3,6 +3,11 @@ react-demo：基于create-react-app构建的react demo
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## react-helmet     
+This reusable React component will manage all of your changes to the document head      
+[react-helmet](https://github.com/nfl/react-helmet)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
